@@ -47,6 +47,21 @@
       <li>＜li＞を＜ol＞で囲むと，数字が連番でつく</li>
       <li>要素を要素で囲むことを**入れ子**と言い，囲む方の要素を**親要素**，囲まれている要素を**子要素**と呼ぶ．</li>
       <li>入れ子構造がある場合，子要素は**インデント**（字下げ）する</li>
+      <li>HTMLは，`＜html＞`要素の中に`＜head＞`要素と`＜body＞`要素が必要</li>
+      <li>`＜head＞`要素にはページに関数る情報，`＜body＞`には実際に表示したい内容を書く</li>
+      <li>`＜!DOCTYPE html＞`は、DOCTYPE宣言と呼ばれるもの(HTMLのバージョンを宣言するためのもの)</li>
+      <li>`＜link rel="stylesheet" href="〇〇.css"＞`でCSSファイルを読み込む</li>
+      <li>"stylesheet"は"CSS"ファイルを読み込む宣言</li>
+      <li>レイアウトは＜div＞要素を使って構成する(例えば、＜div class="header"＞＜/div＞)</li>
+      <li>divはdivisionの略，要素をグループ化するために使用される</li>
+      <il>文字の一部にCSSを適用させたい場合，＜span＞要素で囲む．</il>
+      <li>＜span＞要素の前後には改行が入らない．前後に改行が入る</li>
+      <li>
+        HTMLの要素には，改行される要素とされない要素がある．
+          <ul>
+            <li></li>
+          </ul>
+      </li>
     </ul>
 
     <h3>CSS編</h3>
@@ -67,6 +82,11 @@
       <li>セレクタは，classを使って名前をつけることができる</li>
       <li>class名でCSSを指定する場合，先頭にドット「.」が必要(class="a" -> .a{color: red;})</li>
       <li>複数の要素に同じclassをつけるとそれらはすべて同じCSSが適用される</li>
+      <li>padding，要素の左右上下に余白を作る(padding: 値;)</li>
+      <li>padding-top: 値; などと指定すると，その方向飲みに余白が追加される(padding-bottom, padding-left, padding-right)</li>
+      <li>padding: (top right bottom left)の順で適用される</li>
+      <li>値を2つ指定した場合，padding: (top+bottom right+left) の順で適用される</li>
+      <li>header-listの後にスペースを開けてliを続けると，「header-lsti」の＜li＞要素のみにCSSを適用することができる</li>
     </ul>
   </body>
 </html>
